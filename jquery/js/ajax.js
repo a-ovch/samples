@@ -3,7 +3,7 @@ var UPDATE_TIME_INTERVAL    = 1000;
 
 var UNIX_TIMESTAMP_INDEX    = 'unix_timestamp';
 
-var timeSpan = document.getElementById('currentTime');
+var timeSpan = $('#currentTime');
 
 function startUpdateTime()
 {
@@ -32,11 +32,11 @@ function convertUnixTimestampToTimeStr(unixTimestamp)
 function onSuccess(data, jqXhr, textStatus)
 {
     var unixTimestamp = (data[UNIX_TIMESTAMP_INDEX] !== undefined) ? data[UNIX_TIMESTAMP_INDEX] : 0;
-    timeSpan.textContent = convertUnixTimestampToTimeStr(unixTimestamp);
+    timeSpan.text(convertUnixTimestampToTimeStr(unixTimestamp));
 }
 
 function onError(jqXhr, textStatus, errorThrown)
 {
     var errorInfo = jqXhr.status + ': ' + jqXhr.statusText;
-    console.log('Произошла ошибка! ' + errorInfo);
+    console.error('Произошла ошибка! ' + errorInfo);
 }

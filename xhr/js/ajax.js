@@ -47,5 +47,5 @@ function convertUnixTimestampToTimeStr(unixTimestamp)
 function processError(xhr)
 {
     var errorInfo = xhr.status + ': ' + xhr.statusText;
-    console.log('Произошла ошибка! ' + errorInfo);
+    console.error('Произошла ошибка! ' + errorInfo);
 }
