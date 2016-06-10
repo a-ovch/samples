@@ -1,4 +1,4 @@
-var UPDATE_TIME_URL         = '/ajax/jquery/get_current_time.php';
+var UPDATE_TIME_URL         = '/jquery/get_current_time.php';
 var UPDATE_TIME_INTERVAL    = 1000;
 
 var UNIX_TIMESTAMP_INDEX    = 'unix_timestamp';

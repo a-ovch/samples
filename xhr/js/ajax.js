@@ -1,6 +1,6 @@
 var SUCCESS_HTTP_STATUS     = 200;
 
-var UPDATE_TIME_URL         = '/ajax/xhr/get_current_time.php';
+var UPDATE_TIME_URL         = '/xhr/get_current_time.php';
 var UPDATE_TIME_INTERVAL    = 1000;
 
 var UNIX_TIMESTAMP_INDEX    = 'unix_timestamp';
